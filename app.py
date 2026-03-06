@@ -88,14 +88,14 @@ if input_amount:
     
     # Metrics Row: The three most important numbers
     m1, m2, m3 = st.columns(3)
-    m1.metric("Total Employer Cost", f"${res['Total Employer Cost']:,.2f}")
-    m2.metric("Total Tax Burden", f"${res['Total Tax Burden']:,.2f}", delta="-Government Take", delta_color="inverse")
-    m3.metric("Employee Take-home", f"${res['Net Salary']:,.2f}")
+    m1.metric("Total Employer Cost", f"€{res['Total Employer Cost']:,.2f}")
+    m2.metric("Total Tax Burden", f"€{res['Total Tax Burden']:,.2f}", delta="-Government Take", delta_color="inverse")
+    m3.metric("Employee Take-home", f"€{res['Net Salary']:,.2f}")
 
     # Detailed Table
     st.subheader("📊 Full Financial Breakdown")
     # Formatting numbers for the table
-    formatted_res = {k: f"${v:,.2f}" for k, v in res.items()}
+    formatted_res = {k: f"€v{:,.2f}" for k, v in res.items()}
     st.table(formatted_res)
 
     # Efficiency Insights
