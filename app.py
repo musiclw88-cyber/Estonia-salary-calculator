@@ -95,7 +95,7 @@ if input_amount:
     # Detailed Table
     st.subheader("📊 Full Financial Breakdown")
     # Formatting numbers for the table
-    formatted_res = {k: f"€v{:,.2f}" for k, v in res.items()}
+    formatted_res = {k: f"€{v:,.2f}" for k, v in res.items()}
     st.table(formatted_res)
 
     # Efficiency Insights
