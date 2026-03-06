@@ -7,7 +7,7 @@ def calculate_payroll(amount, input_type, pension_rate):
     unemployment_ee_rate = 0.016
     social_tax_er_rate = 0.33
     unemployment_er_rate = 0.008
-    standard_pension_rate = 0.06
+    pension_rate = 0.00, 0.02, 0.04, 0.06
     
     # Total Employee Deduction rate (excluding Income Tax)
     # 6% Standard + 1.6% Unemployment + Selected Funded Pension (0-6%)
